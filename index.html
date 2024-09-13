@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link rel="shortcut icon" href="./assets/icons/notiz.png" type="image/x-icon">
+
+    <script src="./script/templates.js"></script>
+    <script src="./script.js"></script>
+
+    <link rel="stylesheet" href="./style/standard.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Notizblock</h1>
+        <div class="item_count_container">
+            <img class="trash_icon" onclick="toggleOverlay()" src="./assets/icons/mulleimer.png" alt="">
+            <div class="item_count" id="item_count">0</div>
+        </div>
+    </header>
+
+    <div class="max_content">
+
+        <section class="input_area">
+            <h2>Titel:</h2>
+            <input placeholder="........" id="title_input" type="text">
+            <h2>Notiz:</h2>
+            <input placeholder="........" id="note_input" type="text">
+            <button class="add_button" onclick="addNote()">hinzufügen</button>
+            <h2>Notizen:</h2>
+        </section>
+        <div class="error_message d-none" id="error-message"></div>
+        <div class="note_maincontainer" id="content"></div>
+
+        <div id="overlay_content" class="overlay d-none">
+            <h2 class="h2_trash">Papierkorb</h2>
+            <div class="trash_container" id="trash_content"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
