@@ -2,6 +2,7 @@ h1 {
   margin: 0;
   font-size: 70px;
   color: rgb(255, 165, 47);
+  text-shadow: 4px 4px 4px rgb(24 24 24);
 }
 
 h2 {
@@ -11,6 +12,7 @@ h2 {
   border-radius: 5px;
   text-align: center;
   margin: 5px 0;
+  box-shadow: 4px 4px 7px rgb(24 24 24);
 }
 
 .h2_trash {
@@ -20,6 +22,7 @@ h2 {
   border-radius: 5px;
   text-align: center;
   margin: 5px 50px;
+  box-shadow: 4px 4px 7px rgb(24 24 24);
 }
 
 h3 {
@@ -41,19 +44,23 @@ input {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  box-shadow: 4px 4px 7px rgb(24 24 24);
 }
 
 .add_button {
-  height: 30px;
-  border-radius: 5px;
+  height: 35px;
+  border-radius: 20px;
   font-size: 20px;
+  font-weight: bold;
+  box-shadow: 4px 4px 7px rgb(24 24 24);
 }
 
 .add_button:hover {
   background-color: rgb(0, 153, 255);
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
   font-weight: bold;
+  box-shadow: 4px 4px 4px rgb(240, 102, 102);
 }
 
 .button_delete {
@@ -61,6 +68,7 @@ input {
   width: 35px;
   border-radius: 10px;
   font-size: 22px;
+  box-shadow: 4px 4px 7px rgb(24 24 24);
 }
 
 .button_notes_trash {
@@ -71,6 +79,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 4px 4px 7px rgb(24 24 24);
 }
 
 .button_delete:hover {
