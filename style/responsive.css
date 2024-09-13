@@ -36,7 +36,9 @@
   }
 
   .item_count {
-    top: 21px;
-    right: -9px;
+    top: 32px;
+    right: -2px;
+    font-size: 11px;
+    padding: 0 3px;
   }
 }

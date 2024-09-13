@@ -71,8 +71,10 @@ function addNote() {
   let errorMessageRef = document.getElementById("error-message");
 
   if (titleInputRef.value.trim() === "" || noteInputRef.value.trim() === "") {
-    errorMessageRef.textContent =
-      "Bitte füllen Sie sowohl das Titel- als auch das Notizfeld aus!";
+    const smileyIcon =
+      '<img class="smiley" src="./assets/icons/smiley.png" alt="Smiley">';
+
+    errorMessageRef.innerHTML = "Bitte beide Felder ausfüllen " + smileyIcon;
     errorMessageRef.style.display = "block";
     return;
   }
