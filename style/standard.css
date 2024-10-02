@@ -25,6 +25,10 @@ h2 {
   box-shadow: 4px 4px 7px rgb(24 24 24);
 }
 
+.h2_archive {
+  width: 180px;
+}
+
 h3 {
   font-size: 35px;
   margin: 10px;
