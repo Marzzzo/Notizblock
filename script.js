@@ -44,11 +44,17 @@ function renderNotes() {
     contentRef.innerHTML += getNoteTemplate(indexNote);
   }
   for (
-    let indexTrashNote = 0; indexTrashNote < allNotes.trashNotes.length; indexTrashNote++) {
+    let indexTrashNote = 0;
+    indexTrashNote < allNotes.trashNotes.length;
+    indexTrashNote++
+  ) {
     trashContentRef.innerHTML += getTrashNoteTemplate(indexTrashNote);
   }
   for (
-    let indexArchiveNote = 0; indexArchiveNote < allNotes.archiveNotes.length; indexArchiveNote++) {
+    let indexArchiveNote = 0;
+    indexArchiveNote < allNotes.archiveNotes.length;
+    indexArchiveNote++
+  ) {
     archiveContentRef.innerHTML += getArchiveNoteTemplate(indexArchiveNote);
   }
 }
@@ -105,13 +111,16 @@ function updateItemCount() {
 
 function saveToLocalStorage() {
   localStorage.setItem("allNotes", JSON.stringify(allNotes));
-
 }
 
 function getFromLocalStorage() {
-    allNotes = JSON.parse(localStorage.getItem("allNotes"));
-  
-  
+  let allNotes = localStorage.getItem("allNotes");
+
+  if (allNotes === null) {
+    allNotes = [];
+  } else {
+    allNotes = JSON.parse(allNotes);
+  }
 }
 
 function toggleOverlay() {
